@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--link rel="stylesheet" href="layout.css" /-->
+    <title>Layout</title>
+    <style>
+        * {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        h2 {
+            display: block;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        #r1 {
+            background-color: whitesmoke;
+            height: 50px;
+            /*padding-top: 22px;*/
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        #r2 {
+            background-color: aquamarine;
+            height: 35px;
+            padding-top: 10px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        #r3 {
+            background-color: rgb(253, 214, 152);
+            height: 85px;
+            padding-top: 50px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        #r4 {
+            height: 500px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        #r4 div {
+            background-color: aqua;
+            height: 500px;
+            /* padding-top: 225px; */
+            /* text-align: center; */
+            float: left;
+        }
+        
+        #r4c1 {
+            width: 32%;
+            margin-right: 2%;
+            background-color: aqua;
+            position: relative;
+            animation: rotate 2s linear;
+            object-fit: contain;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        #r4c2 {
+            width: 32%;
+            margin-right: 2%;
+            position: relative;
+            
+        }
+        
+        #r4c3 {
+            width: 32%;
+            background-color: aqua;
+            position: relative;
+            animation: rotate 2s linear;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes mymove {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+        
+        #r5 {
+            background-color: rgb(58, 55, 55);
+            height: 33px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+        
+        a:hover {
+            color: white;
+            background-color: rgb(231, 71, 71);
+        }
+        
+        img {
+            /* max-width: 100%; */
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        #logo {
+            width: fit-content;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+            padding-right: 86%;
+        }
+        
+        #img1 {
+            object-fit: fill;
+        }
+        
+        #img2 {
+            object-fit: fill;
+        }
+        
+        #img3 {
+            object-fit: fill;
+        }
+        
+        #icon1 {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+        }
+        
+        #logo2 {
+            width: fit-content;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Layout</h2>
+
+    <div id="r1">
+        <span>
+        <img id="logo" src="https://scalebranding.com/wp-content/uploads/2021/03/v2.jpg" width="10px" height="100" />
+        <img id="logo2" src="https://as2.ftcdn.net/v2/jpg/03/34/75/23/1000_F_334752394_h1bWkTsvkLhZeln0GYltaBr9EutBRXGy.jpg" width="10px" height="100" />
+
+        </span>
+
+    </div>
+    <div id="r2">
+        <a href="https://www.google.com">Home</a>
+        <a href="https://www.google.com">About</a>
+        <a href="https://www.google.com">contact</a>
+
+    </div>
+    <div id="r3">
+        <a href="https://silveroakuni.ac.in/">click here</a>
+    </div>
+    <div id="r4">
+        <div id="r4c1">
+            <img id="img1" src="https://c4.wallpaperflare.com/wallpaper/467/499/639/sharingan-naruto-shippuuden-mangekyou-sharingan-uchiha-obito-wallpaper-preview.jpg" />
+        </div>
+        <div id="r4c2">
+            <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/1oQIYzKHrZc" title="All Mangekyou Sharingan Transitions VFX Animation 4K (Free to download and use)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="r4c3">
+            <img id="img3" src="https://wallpaperaccess.com/full/807011.jpg" />
+        </div>
+    </div>
+    <div id="r5">
+    </div>
+</body>
+
+</html>
