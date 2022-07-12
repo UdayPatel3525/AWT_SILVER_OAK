@@ -1,0 +1,85 @@
+SOU-B.TECH-5TH-A 5-A Stream Classwork People All topics Advance Web Technology(AWT) Advance Web Technology(AWT) Advance Web Technology(AWT) Material link for material (HTML & CSS) Posted Jul 2 Material css source code for login page effect Edited Jul
+2 CSS_Hover_menu.html HTML CSS_Types.html HTML CSS3_Animation.htm HTML CSS3_Demo.htm HTML Demo.html HTML EXTRA MARKUP.html HTML FontAwesome.html HTML FORM.html HTML Validations.html HTML
+<html>
+
+<head>
+    <title>CSS Hover Element - Selector OR Child Combinator</title>
+    <style type="text/css">
+        #MainUL li ul li {
+            display: none;
+        }
+        
+        #MainUL li:hover ul li {
+            display: block;
+            color: blue;
+        }
+        
+        #MainUL li:hover ul li ul li {
+            display: none;
+        }
+        
+        #MainUL li ul li:hover ul li {
+            display: block;
+            color: red;
+        }
+        
+        #MainUL li ul li:hover ul li ul li {
+            display: none;
+        }
+        
+        #MainUL li ul li ul li:hover ul li {
+            display: block;
+        }
+        
+        #MainUL {
+            display: flex;
+            justify-content: space-between;
+            height: 250px;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul id="MainUL">
+        <li>Google
+            <ul>
+                <li>Gmail
+                    <ul>
+                        <li>Sign Up</li>
+                        <li>Sign In
+                            <ul>
+                                <li>Sign In As Admin</li>
+                                <li>Sign In As Member</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Youtube</li>
+                <li>GDrive</li>
+                <li>GMap</li>
+            </ul>
+        </li>
+        <li>Facebook</li>
+        <li>Microsoft
+            <ul>
+                <li>Bing</li>
+                <li>Linked In</li>
+            </ul>
+        </li>
+        <li>MSN</li>
+        <li>Amazon
+            <ul>
+                <li>AWS</li>
+                <li>Ecommerce</li>
+                <li>A-ML</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
+CSS_Hover_menu.html Displaying CSS_Hover_menu.html.
