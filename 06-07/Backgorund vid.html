@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninth Practical</title>
+    <style>
+     body{
+        color: green;
+     }
+     input,textarea,fieldset,button,::placeholder{
+        background: none;
+        color: green;
+     }
+      
+#vid{
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+
+    @media(max-width: 100%){
+        #vid {display: none;}
+        body{
+            background: url("Space - 6218.mp4") repeat;
+            background-size: cover;
+        }}
+    </style>
+</head>
+
+<body>
+    
+    
+    
+    
+    <div id="vp" style=" opacity: 1;">
+        <h2 style="color: ghostwhite;">Form</h2>
+    <form >
+        <span>First Name:</span>
+        <input type="text" id="fn" placeholder="Enter Name" style="margin-left: 2px;">
+        <br>
+        <span>Last Name:</span>
+        <input type="text" id="ln" placeholder="Enter Last Name" style="margin-left: 4px;">
+    </form>
+    <br>
+    <input type="radio" id="f" name="Gender">
+    <label for="f">Female</label>
+    <input type="radio" id="m" name="Gender">
+    <label for="m">male</label>
+    <br>
+    <input type="checkbox" id="c" name="Checked">
+    <label for="c">checked</label>
+    <input type="button" value="click here">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <br><br>
+    <input type="date" style="background: none;">
+    <br><br>
+    <input type="time">
+    <br><br>
+    <input type="range">
+    <br><br>
+    <textarea rows="10" placeholder="Enter Text" maxlength="200"></textarea>
+    <fieldset>
+        <legend>Sign In</legend>
+        <div>UserName:</div>
+        <input type="text" id="n" placeholder="Enter User Name">
+        <div>Password:</div>
+        <input type="text" id="f" placeholder="Enter Password">
+        <br>
+        <br>
+        <button value="Sign In">Sign In</button>
+    </fieldset>
+
+    <video id="vid"  autoplay loop muted poster="./Space-6218.mp4" >
+        <source src="./Space - 6218.mp4" type="video/mp4" >
+    </video>
+    </div>
+    
+</body>
+
+</html>
