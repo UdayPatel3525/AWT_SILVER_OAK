@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* border: 5px solid red; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #111;
+        }
+        .con{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .con .ring{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: -30px;
+            border: 4px solid transparent;
+            border-radius: 75px;
+            /* border-top: 4px solid red; */
+            /* border-right:4px solid rgb(10, 139, 139); ; */
+            
+        }
+     
+       
+        .ring:nth-child(3){
+             position: absolute;
+             top: -66.66px;
+             border-top: 4px solid rgb(39, 9, 234);
+             animation: animated 4s linear infinite;
+        }
+         /* .con .ring::before{
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: rgb(245, 183, 183);
+            box-shadow: 0 0 0 5px rgb(157, 99, 99),
+            0 0 0 10px #bb9595fb,
+            0 0 0 20px #a67b7bfe,
+            0 0 20px aqua,
+            0 0 50px #a4e38e;
+        } */
+        .con .ring:nth-child(3):before{
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: rgb(39, 9, 234);
+            box-shadow: 0 0 0 5px #3f26e045,
+            0 0 0 10px #3f26e035,
+            0 0 0 20px #3f26e025,
+            0 0 20px #3f26e0,
+            0 0 50px #3f26e0;
+        }
+        
+           @keyframes animated{
+            0%{
+               transform: rotate(20deg); 
+            }
+            100%{
+                transform: rotate(380deg);
+            }
+        }
+        .ring:nth-child(2){
+            animation: animate2 4s linear infinite; 
+            border-top: 4px solid rgb(9,234,65);
+        }
+        .con .ring:nth-last-child(2)::before{
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+      
+            background: rgb(9, 234, 65);
+            box-shadow: 0 0 0 5px #93ff2d33,
+            0 0 0 10px #93ff2d22,
+            0 0 0 20px #93ff2d11,
+            0 0 20px #93ff2d,
+            0 0 50px #93ff2d;
+        }
+        @keyframes animate2{
+            0%{
+                transform: rotate(380deg);
+            }
+            100%{
+                transform: rotate(20deg);
+            }
+        }
+        .ring:nth-child(1){
+            animation: animate3 4s linear infinite;
+            border-top: 4px solid violet;
+        }
+        .con .ring:nth-last-child(3)::before{
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+      
+            background: violet;
+            box-shadow: 0 0 0 5px #f12dff33,
+            0 0 0 10px #f12dff22,
+            0 0 0 20px #f12dff11,
+            0 0 20px #f12dff,
+            0 0 50px #f12dff;
+        }
+        @keyframes animate3{
+            0%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(660deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+         <div class="ring"></div>
+         <div class="ring"></div>
+         <div class="ring"></div> 
+    </div>
+</body>
+</html>
