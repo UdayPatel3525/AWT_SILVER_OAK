@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <style>
+        body{
+            background : url(Waves\ -\ 71122.mp4) repeat;
+            background-size: cover;
+        }
+        #vid{
+       
+            position: fixed;
+            object-fit: cover;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: column;
+            /* border: 2px solid red; */
+            width: 500px;
+            position: relative;
+            left: 33%;
+            top: 30px;
+            padding-bottom: 20px;
+            background: none;
+            color: rgb(223, 247, 44);
+            font-size: 18px;
+            text-align: center;
+        }
+        input,::placeholder{
+            background: none;
+            color: rgb(18, 243, 56);padding: 12px 12px;
+            font-size: 16px;
+            /* margin-bottom: 25px; */
+            width: 500px;
+        }
+        button{
+            position: relative;
+            background: none;
+            color:rgb(18, 243, 56) ;
+            padding: 12px 12px;
+            width: 200px;
+            left: 160px;
+            justify-content: center;
+            font-size: 16px;
+        }
+        button:hover{
+            color: rgb(255, 94, 0);
+            opacity: .7;
+            background-color: rgb(234, 255, 0);
+        }
+        #Gender{
+            background: none;
+            color: aqua;
+            padding: 12px ;
+            width: 200px;
+            position: relative;
+            left: 160px;
+            font-size: 16px;
+            /* margin-bottom: 25px; */
+        }
+        input:hover{
+            border: 2px solid red;
+            box-shadow: 16px 14px 20px 14px rgb(233, 120, 91) inset;
+            background-color: rgb(140, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h3>Form</h3>
+    <form action="action.php" name="frm"  method="post">
+    First-Name : <br>
+    <input type="text" name="fname" pattern="[a-zA-Z]+" maxlength="20" placeholder="Enter first name" required>
+    <br>
+    Last-Name  : <br> <input type="text" name="lname" pattern="[a-zA-Z]+" placeholder="Enter last name" required>
+    <br>
+    Contact-No. :<br> <input type="tel" placeholder="Enter number" maxlength="10" minlength="10" pattern="[0-9]+" required>
+    <br>
+    <label for="Gender">Gender :</label>
+    <select id="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <br>
+    Email-Id : <br> <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter email-id">
+    <br>
+    Password : <br> <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter password">
+    <br>
+    <button type="submit" value="submit">Submit</button>
+</form>
+    <video id="vid" autoplay loop muted poster="./Waves - 71122.mp4">
+        <source src="./Waves - 71122.mp4" type="video/mp4">
+    </video>
+    </div>
+</body>
+</html>
